@@ -1,0 +1,40 @@
+import { graphql } from 'gatsby';
+import {
+  Button,
+  HeroBenefits,
+  HeroButton,
+  HeroContent,
+  HeroHeading,
+  HeroImage,
+  HeroText,
+  HeroWrapper,
+  SEO,
+  WithPopover
+} from '$components';
+
+export default ({ children }) => (
+      <HeroWrapper>
+        <SEO />
+        <HeroImage />
+        <HeroText>
+          <HeroHeading>Hello ! </HeroHeading>
+          <HeroBenefits>
+            Welcome to my blog. I want to share here my way to create my own company and improve myself.
+            <br/>
+            This is mostly my website if you want to explore my electronic projects you shold go to furwers.com
+          </HeroBenefits>
+        </HeroText>
+        <HeroContent id="home-content">
+          {children}
+        </HeroContent>
+      </HeroWrapper>
+    
+)
+
+
+## This page will be more awesome but this is an only alpha version of this site  
+
+I will work hard to improve it and write more blog posts this is only a temporary version to meet my goal: _make this site in 2020_ 
+
+
+<div style="width:;height:0;padding-bottom:75%;"><iframe src="https://giphy.com/embed/1oDwWUJWeDvyz12yWb" width="25%" height="25%" style="margin-left:auto;margin-right:auto;left:0;right:0;text-align:center;position:absolute" frameBorder="0" class="giphy-embed" allowFullScreen></iframe></div>
